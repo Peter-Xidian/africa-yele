@@ -895,12 +895,22 @@
 }
 
 .te-container {
+  position: relative;
   width: 100%;
   padding: var(--mb-4);
   row-gap: var(--mb-4);
   justify-content: flex-start;
   background-color: var(--theme-red);
   z-index: 2;
+}
+
+.te-container::before {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .te-title {
@@ -910,6 +920,7 @@
   row-gap: var(--mb-1-5);
   padding-bottom: var(--mb-4);
   border-bottom: 1px #ddd solid;
+  z-index: 2;
 }
 
 .te-title span {
@@ -952,6 +963,7 @@
   width: 100%;
   justify-content: flex-start;
   row-gap: var(--mb-2-5);
+  z-index: 2;
 }
 
 .te-cards {
@@ -1019,7 +1031,7 @@
 /* ========== CLIENTS SECTION ========== */
 .clients {
   width: 100%;
-  padding: var(--mb-8);
+  padding: var(--mb-6) var(--mb-8);
   /* padding-top: 0; */
   background-color: var(--white);
   /* border: 1px tomato solid; */

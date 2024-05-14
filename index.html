@@ -43,9 +43,7 @@
     <header class="flex-center header">
       <nav class="flex-center nav">
         <div class="flex-center nav-logo">
-          <a href="index.html">
-            <img src="assets/img/brand/ay-white.png" alt="" loading="lazy" />
-          </a>
+          <a href="index.html"> </a>
         </div>
 
         <div class="flex-center nav-menu">
@@ -69,11 +67,13 @@
       <section class="flex-center hero" id="hero">
         <div class="flex-center hero-container">
           <div class="flex-center flex-col h-content">
-            <p>
+            <p data-aos="fade-up">
               Nous exploitons la technologie pour résoudre les défis quotidiens
               de nos communautés.
             </p>
-            <h1>L'Afrique francophone, notre Inspiration.</h1>
+            <h1 data-aos="fade-up" data-aos-delay="300">
+              L'Afrique francophone, notre Inspiration.
+            </h1>
 
             <div class="flex-center hc-circle">
               <p>let's talk</p>
@@ -94,23 +94,27 @@
             <div class="flex-center flex-col act">
               <span>About us</span>
 
-              <h3>
+              <h3 data-aos="fade-up">
                 Africa Yele is a praesentium ipsa voluptas consequatur
                 repudiandae alias modi in deleniti vel debitis.
               </h3>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corrupti quam beatae laudantium cupiditate provident porro ea
                 velit ipsa, accusamus minima.
               </p>
             </div>
 
-            <div class="flex-center act-img">
+            <div
+              class="flex-center act-img"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <img src="" alt="" loading="lazy" />
             </div>
           </div>
 
-          <div class="flex-center ac-cards">
+          <div class="flex-center ac-cards" data-aos="fade-up">
             <div class="flex-center flex-col acc">
               <span class="material-symbols-outlined"> globe </span>
               <h4>Une géographie unique</h4>
@@ -180,7 +184,7 @@
             </div>
 
             <div class="flex-center pc-cards">
-              <div class="flex-center flex-col pcc">
+              <div class="flex-center flex-col pcc" data-aos="fade-up">
                 <div class="flex-center flex-col pcc-title">
                   <img
                     src="assets/img/icons/talent.png"
@@ -205,7 +209,11 @@
                 </div>
               </div>
 
-              <div class="flex-center flex-col pcc">
+              <div
+                class="flex-center flex-col pcc"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div class="flex-center flex-col pcc-title">
                   <img
                     src="assets/img/icons/progress.png"
@@ -233,7 +241,11 @@
                 </div>
               </div>
 
-              <div class="flex-center flex-col pcc">
+              <div
+                class="flex-center flex-col pcc"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <div class="flex-center flex-col pcc-title">
                   <img
                     src="assets/img/icons/office.png"
@@ -305,8 +317,12 @@
             </div>
           </div>
 
-          <div class="j-cards">
-            <div class="flex-center flex-col jc">
+          <div class="j-cards" data-aos="fade">
+            <div
+              class="flex-center flex-col jc"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <h4>Plus qu'une inspiration, une quête plus grande que soi</h4>
               <p>
                 Rejoint en Octobre 2022, par ses potes avec qui il aime parler
@@ -331,7 +347,11 @@
               </p>
             </div>
 
-            <div class="flex-center flex-col jc">
+            <div
+              class="flex-center flex-col jc"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h4>Plus qu’une simple organisation, un écosystème</h4>
               <p>
                 AfricaYele Inc., c'est bien plus qu'une simple organisation.
@@ -364,7 +384,7 @@
             </p>
           </div>
 
-          <div class="flex-center flex-col se-cards">
+          <div class="flex-center flex-col se-cards" data-aos="fade-up">
             <div class="flex-center flex-col sec">
               <div class="flex-center sec-title">
                 <sub>01.</sub>
@@ -504,7 +524,7 @@
             </p>
           </div>
 
-          <div class="flex-center flex-col te-wrapper">
+          <div class="flex-center flex-col te-wrapper" data-aos="fade-up">
             <div class="flex-center te-cards">
               <div class="flex-center flex-col tec">
                 <h4>
@@ -535,16 +555,28 @@
         <div class="flex-center flex-col cl-container">
           <div class="flex-center cl-title"><h3>Ils parlent de nous</h3></div>
           <div class="flex-center cl-cards">
-            <div class="flex-center clc">
+            <div class="flex-center clc" data-aos="fade-left">
               <img src="assets/img/clients/forbes.png" alt="" loading="lazy" />
             </div>
-            <div class="flex-center clc">
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <img src="assets/img/clients/jeune.png" alt="" loading="lazy" />
             </div>
-            <div class="flex-center clc">
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
               <img src="assets/img/clients/tech.png" alt="" loading="lazy" />
             </div>
-            <div class="flex-center clc">
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
               <img src="assets/img/clients/canal.png" alt="" loading="lazy" />
             </div>
           </div>
@@ -629,7 +661,7 @@
     <script>
       AOS.init({
         duration: 1500,
-        anchor: "top center",
+        anchor: "center center",
       });
 
       window.addEventListener("load", AOS.refresh);

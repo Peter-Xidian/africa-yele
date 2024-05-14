@@ -1,15 +1,3 @@
-/*==================== SHOW SCROLL UP ====================*/
-function scrollUp() {
-  const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 480) {
-    scrollUp.classList.add("show-scroll");
-  } else {
-    scrollUp.classList.remove("show-scroll");
-  }
-}
-window.addEventListener("scroll", scrollUp);
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
   const nav = document.querySelector(".nav");
@@ -17,30 +5,30 @@ function scrollHeader() {
   var width = window.innerWidth > 0 ? window.innerWidth : screen.width;
   //When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 80) {
-    nav.classList.add("scroll-nav");
-    header.classList.add("scroll-header");
+    nav.classList.add("active");
+    header.classList.add("active");
   } else {
-    nav.classList.remove("scroll-nav");
-    header.classList.remove("scroll-header");
+    nav.classList.remove("active");
+    header.classList.remove("active");
   }
 }
 
 window.addEventListener("scroll", scrollHeader);
 
 /*==================== TOGGLE MENU MOBILE ====================*/
-const navMenu = document.querySelector(".nav-menu-mobile");
+const navMenu = document.querySelector(".nav-menu");
 
 function toggleMenu() {
-  navMenu.classList.toggle("toggle-nmm");
+  navMenu.classList.toggle("active");
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nml");
 
 function linkAction() {
-  const navMenu = document.querySelector(".nav-menu-mobile");
+  const navMenu = document.querySelector(".nav-menu");
   // When we click on each nav__link, we remove the toggle-nav-menu class
-  navMenu.classList.remove("toggle-nmm");
+  navMenu.classList.remove("active");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
