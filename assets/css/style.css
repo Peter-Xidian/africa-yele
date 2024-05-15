@@ -1360,7 +1360,7 @@
 
   .pc-title h3 {
     width: 100%;
-    font-size: var(--fs-2);
+    font-size: 1.8rem;
     line-height: 1.4;
     margin: var(--mb-0-5) 0;
   }
@@ -1831,8 +1831,8 @@
 
   .clc {
     flex: 0 0 auto;
-    width: 80%;
-    height: 80px;
+    width: 60%;
+    height: unset;
     /* border: 1px gold solid; */
     padding: var(--mb-1);
     overflow: hidden;
