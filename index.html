@@ -13,6 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
 
     <!-- ===== MATERIAL ICONS =====-->
     <link
@@ -47,7 +48,15 @@
         </div>
 
         <div class="flex-center nav-menu">
-          <div class="flex-center nm-logo"></div>
+          <span
+            class="material-symbols-outlined"
+            id="nav-close"
+            onclick="toggleMenu()"
+          >
+            close
+          </span>
+
+          <a href="index.html" class="nm-logo"></a>
 
           <ul class="flex-center nm-ul">
             <li class="flex-center nml"><a href="">Home</a><span></span></li>
@@ -59,6 +68,14 @@
 
           <button class="flex-center nm-btn">Get In Touch <span></span></button>
         </div>
+
+        <span
+          class="material-symbols-outlined"
+          id="nav-open"
+          onclick="toggleMenu()"
+        >
+          menu
+        </span>
       </nav>
     </header>
 
@@ -317,12 +334,8 @@
             </div>
           </div>
 
-          <div class="j-cards" data-aos="fade">
-            <div
-              class="flex-center flex-col jc"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+          <div class="j-cards">
+            <div class="flex-center flex-col jc">
               <h4>Plus qu'une inspiration, une quête plus grande que soi</h4>
               <p>
                 Rejoint en Octobre 2022, par ses potes avec qui il aime parler
@@ -347,11 +360,7 @@
               </p>
             </div>
 
-            <div
-              class="flex-center flex-col jc"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <div class="flex-center flex-col jc">
               <h4>Plus qu’une simple organisation, un écosystème</h4>
               <p>
                 AfricaYele Inc., c'est bien plus qu'une simple organisation.
@@ -384,7 +393,7 @@
             </p>
           </div>
 
-          <div class="flex-center flex-col se-cards" data-aos="fade-up">
+          <div class="flex-center flex-col se-cards">
             <div class="flex-center flex-col sec">
               <div class="flex-center sec-title">
                 <sub>01.</sub>
@@ -679,10 +688,10 @@
     <script>
       AOS.init({
         duration: 1500,
-        anchor: "center center",
+        anchor: "top center",
       });
 
-      window.addEventListener("load", AOS.refresh);
+      // window.addEventListener("load", AOS.refresh);
     </script>
   </body>
 </html>
