@@ -66,7 +66,9 @@
             <li class="flex-center nml"><a href="">Join Us</a><span></span></li>
           </ul>
 
-          <button class="flex-center nm-btn">Get In Touch <span></span></button>
+          <button class="flex-center nm-btn" onclick="toggleConModal()">
+            Get In Touch <span></span>
+          </button>
         </div>
 
         <span
@@ -311,7 +313,7 @@
 
             <div class="flex-center jt-action">
               <p>Prêt à contribuer?</p>
-              <button class="flex-center jta-btn">
+              <button class="flex-center jta-btn" onclick="toggleConModal()">
                 <p>Écrivons l'histoire ensemble</p>
                 <span class="material-symbols-outlined"> arrow_forward </span>
               </button>
@@ -597,7 +599,7 @@
         <div class="flex-center cta-container">
           <div class="flex-center flex-col cta-content">
             <h3>Want to jump on a project with us?</h3>
-            <button class="flex-center cta-btn">
+            <button class="flex-center cta-btn" onclick="toggleConModal()">
               <p>Let's Talk</p>
               <span class="material-symbols-outlined"> arrow_forward </span>
             </button>
@@ -667,21 +669,49 @@
     <!-- =========== CONTACT MODAL =========== -->
     <section class="flex-center con-modal">
       <div class="flex-center flex-col com-container">
-        <p>close</p>
+        <p class="com-close" onclick="toggleConModal()">Close</p>
 
         <div class="flex-center flex-col com-title">
-          <h3></h3>
-          <p></p>
+          <h3>We would love to hear from you!</h3>
+          <p>
+            Choose any preferred medium below, and we will get back to you as
+            soon as possible
+          </p>
         </div>
 
         <div class="flex-center com-cards">
-          <div class="comc"></div>
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bxl-whatsapp"></i>
+            <p>Chat to support</p>
+            <span>Shoot us a text</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-envelope"></i>
+            <p>Send us mails</p>
+            <span>We are here to help</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-phone-call"></i>
+            <p>Call Us</p>
+            <span>Mon-Fri 8am to 5pm</span>
+          </div>
+        </div>
+
+        <div class="flex-center flex-col com-socials">
+          <p>Connect with us:</p>
+
+          <div class="flex-center coms">
+            <a href="" target="_blank">Instagram</a>
+            <a href="" target="_blank">Facebook</a>
+            <a href="" target="_blank">LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- =========== SCRIPT =========== -->
-
     <script src="assets/js/index.js"></script>
     <!-- ===== AOS (Animate On Scroll) =====-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

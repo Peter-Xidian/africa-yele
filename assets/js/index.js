@@ -15,11 +15,16 @@ function scrollHeader() {
 
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== TOGGLE MENU MOBILE ====================*/
+/*==================== TOGGLE CONTAINERS ====================*/
 const navMenu = document.querySelector(".nav-menu");
+const conModal = document.querySelector(".con-modal");
 
 function toggleMenu() {
   navMenu.classList.toggle("active");
+}
+
+function toggleConModal() {
+  conModal.classList.toggle("active");
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
