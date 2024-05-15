@@ -625,7 +625,7 @@ button {
   }
 
   .nav.active .nav-logo {
-    width: 80px;
+    width: 70px;
     height: 30px;
   }
 
@@ -671,7 +671,7 @@ button {
   }
 
   .nm-logo {
-    width: 90px;
+    width: 80px;
     height: 28px;
     background-image: url(/assets/img/brand/ay-black.png);
     background-position: center;
@@ -728,6 +728,7 @@ button {
     background-color: var(--soft-black);
     color: var(--white);
     border-radius: 5px;
+    overflow: hidden;
   }
 
   .nav.active .nm-btn {
