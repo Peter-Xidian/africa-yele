@@ -313,7 +313,7 @@ button {
   left: 0;
   width: 100%;
   z-index: 30;
-  padding: 0 var(--mb-4);
+  padding: 0 var(--mb-6);
   /* border: 1px tomato solid; */
 }
 
@@ -328,6 +328,11 @@ button {
   justify-content: space-between;
 }
 
+.bus .nav {
+  padding-bottom: var(--mb-1);
+  border-bottom: 1px #aaa solid;
+}
+
 .nav.active {
   padding: var(--mb-1) var(--mb-1-5);
   border-radius: 10px;
@@ -335,8 +340,12 @@ button {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
+.bus .nav.active {
+  border: none;
+}
+
 .nav-logo {
-  width: 110px;
+  width: 90px;
   height: 35px;
   justify-content: flex-start;
   /* border: 1px gold solid; */
@@ -357,6 +366,10 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.bus .nav-logo a {
+  background-image: url(/assets/img/brand/ay-black.png);
 }
 
 .nav.active .nav-logo a {
@@ -389,6 +402,10 @@ button {
   border-right: 1px var(--soft-white) solid;
 }
 
+.bus .nm-ul {
+  border-right: 1px #aaa solid;
+}
+
 .nav.active .nm-ul {
   border-right: 1px #aaa solid;
 }
@@ -403,6 +420,10 @@ button {
   font-weight: 400;
   text-align: center;
   color: var(--soft-white);
+}
+
+.bus .nml a {
+  color: var(--text-grey);
 }
 
 .nav.active .nml a {
@@ -421,6 +442,10 @@ button {
   color: var(--white);
 }
 
+.bus .nml:hover a {
+  color: var(--soft-black);
+}
+
 .nml:hover span {
   width: 100%;
 }
@@ -437,6 +462,10 @@ button {
   font-weight: 400;
   text-align: center;
   color: var(--soft-white);
+}
+
+.bus .nm-btn {
+  color: var(--soft-black);
 }
 
 .nav.active .nm-btn {
@@ -840,4 +869,133 @@ button {
 
 /* Media query for screens with a minimum width of 1800px */
 @media screen and (min-width: 1800px) {
+  /* ========== HEADER SECTION ========== */
+  .header {
+    position: fixed;
+    top: var(--mb-2);
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    padding: 0 12rem;
+    /* border: 1px tomato solid; */
+  }
+
+  .header.active {
+    top: var(--mb-1);
+    padding: 0 12rem;
+  }
+
+  .nav {
+    width: 100%;
+    /* border: 1px dodgerblue solid; */
+    justify-content: space-between;
+  }
+
+  .nav.active {
+    padding: var(--mb-1-5);
+  }
+
+  .nav-logo {
+    width: 100px;
+    height: 35px;
+    justify-content: flex-start;
+    /* border: 1px gold solid; */
+  }
+
+  .nav.active .nav-logo {
+    width: 100px;
+    height: 30px;
+  }
+
+  /* ========== FOOTER SECTION ========== */
+  .footer {
+    width: 100%;
+    padding: var(--mb-4) 14rem;
+  }
+
+  .foot-container {
+    padding-bottom: var(--mb-2);
+    border-bottom: 1px #ccc solid;
+  }
+
+  .ft-head {
+    flex: 0 0 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: var(--mb-1-5);
+    /* border: 1px gold solid; */
+  }
+
+  .ft-head a {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .ft-head a img {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .ft-head p {
+    width: 60%;
+    font-size: 1.1rem;
+  }
+
+  .ft-links {
+    flex: 0 0 40%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .ftl {
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: var(--mb-0-75);
+  }
+
+  .ftl p {
+    font-size: 1.3rem;
+  }
+
+  .ftl-ul {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: var(--mb-0-25);
+  }
+
+  .ftl-ul li {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .ftl-ul li a {
+    font-size: 1.1rem;
+  }
+
+  .foot-terms {
+    width: 100%;
+    padding-top: var(--mb-2);
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .foot-terms p {
+    font-size: 1rem;
+  }
+
+  .ft {
+    flex: 0 0 40%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .ft a {
+    font-size: 1rem;
+  }
 }

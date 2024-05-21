@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Africa Yele - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis, a exercitationem vel adipisci eius modi laborum est vitae id neque
+    unde repudiandae iusto nihil natus ipsam culpa nobis eaque non."
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+
+    <!-- ===== MATERIAL ICONS =====-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===== FAVICON =====-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <title>Businesses - Africa Yele</title>
+  </head>
+
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="flex-center header">
+      <nav class="flex-center nav">
+        <div class="flex-center nav-logo">
+          <a href="index.html"> </a>
+        </div>
+
+        <div class="flex-center nav-menu">
+          <span
+            class="material-symbols-outlined"
+            id="nav-close"
+            onclick="toggleMenu()"
+          >
+            close
+          </span>
+
+          <a href="index.html" class="nm-logo"></a>
+
+          <ul class="flex-center nm-ul">
+            <li class="flex-center nml">
+              <a href="index.html">Home</a><span></span>
+            </li>
+            <li class="flex-center nml">
+              <a href="business.html">Businesses</a><span></span>
+            </li>
+            <li class="flex-center nml">
+              <a href="enterprise.html">Join Us</a><span></span>
+            </li>
+          </ul>
+
+          <button class="flex-center nm-btn" onclick="toggleConModal()">
+            Get In Touch <span></span>
+          </button>
+        </div>
+
+        <span
+          class="material-symbols-outlined"
+          id="nav-open"
+          onclick="toggleMenu()"
+        >
+          menu
+        </span>
+      </nav>
+    </header>
+
+    <main class="bus-main">
+      <!-- =========== BERO SECTION =========== -->
+      <section class="flex-center bero" id="bero">
+        <div class="flex-center flex-col bero-container">
+          <div class="flex-center flex-col b-content">
+            <p>
+              Nous exploitons la technologie pour résoudre les défis quotidiens
+              de nos communautés.
+            </p>
+            <h1>
+              <span>AfricaYele Inc.</span> - est une mission-driven organisation
+              panafricaine opérant en B2B et B2C.
+            </h1>
+
+            <div class="flex-center hc-footer">
+              <p>&copy; Africa Yele 2024</p>
+              <a href="#about">Scroll to explore</a>
+            </div>
+          </div>
+
+          <div class="flex-center flex-col b-values">
+            <div class="flex-center bv-img"></div>
+
+            <div class="flex-center bv-cards">
+              <div class="flex-center flex-col bvc">
+                <h4>Kemôgô Ye <span>"Soit digne"</span></h4>
+                <p>
+                  Elle s'acquiert par le travail et se perpétue par l'excellence
+                  dans son domaine. Elle confère le titre de Faman.
+                </p>
+              </div>
+
+              <div class="flex-center flex-col bvc">
+                <h4>Dakan</h4>
+                <p>
+                  La parole donnée est tellement importante que faman préfère
+                  mourir que de la transgresser.
+                </p>
+              </div>
+
+              <div class="flex-center flex-col bvc">
+                <h4>Yôrôdjan Ye</h4>
+                <p>
+                  Faman garde toujours une longueur d'avance. Il/Elle puise ses
+                  connaissances à travers les récits du passé, les faits du
+                  présent et théories futuristes afin de préparer les siens à
+                  toute éventualité.
+                </p>
+              </div>
+
+              <div class="flex-center flex-col bvc">
+                <h4>Anbêkako <span>"L’affaire de tous"</span></h4>
+                <p>
+                  Les actions du Faman engagent toute la communauté dans son
+                  entièreté (sa famille, son village, sa cité, son pays et le
+                  continent) donc il doit s’efforcer à vivre sa vie en gardant
+                  cela à l’esprit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== TEAM SECTION =========== -->
+      <section class="flex-center team">
+        <div class="flex-center flex-col tm-container">
+          <div class="flex-center flex-col tm-title">
+            <span>Les Founders</span>
+            <h3>Réunir passion et expertise</h3>
+            <p>
+              Met at ALU <strong>-</strong> All scholars
+              <strong>-</strong> Lived together <strong>-</strong>
+              Shared desire to be the change.
+            </p>
+          </div>
+          <div class="flex-center tm-cards">
+            <div class="flex-center flex-col tmc">
+              <img
+                src="assets/img/profile/ibrahima.jfif"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Ibrahima Sylla</h4>
+              <span>Co-Founder & Business Lead</span>
+              <p>
+                A borned entrepreneur qui a lancé sa première entreprise à l'âge
+                de 7 ans, il a développé des compétences commerciales et de
+                leadership en travaillant pour des startups et des grandes
+                entreprises.
+              </p>
+            </div>
+
+            <div class="flex-center flex-col tmc">
+              <img
+                src="assets/img/profile/amichia.jfif"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Ebo Amichia</h4>
+              <span>Co-founder & Creative Lead</span>
+              <p>
+                A borned artist qui sait exceptionnellement bien combiner la
+                créativité et la technologie pour créer des histoires
+                inspirantes et captivantes.
+              </p>
+            </div>
+
+            <div class="flex-center flex-col tmc">
+              <img src="assets/img/profile/yacine.jfif" alt="" loading="lazy" />
+              <h4>Yacine Coulibaly</h4>
+              <span>Co-founder & People Lead</span>
+              <p>
+                A people person avec une expérience en People Ops et en gestion
+                d'événements. Elle sait transformer les idées abstraites en
+                résultats concrets.
+              </p>
+            </div>
+
+            <div class="flex-center flex-col tmc">
+              <img src="assets/img/profile/p-3.jpg" alt="" loading="lazy" />
+              <h4>Leonel Sandwidi</h4>
+              <span>Co-founder & Education Lead</span>
+              <p>
+                An education-driven person, Il est obsédé par l'idée de rendre
+                l'éducation de qualité accessible à tous. Il a travaillé en tant
+                que directeur d'école dans différentes universités en Afrique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== COMPANIES SECTION =========== -->
+      <section class="flex-center companies">
+        <div class="flex-center flex-col cm-container">
+          <div class="flex-center flex-col cm-title">
+            <span>Nos entreprises</span>
+            <h3>Résoudre les problèmes avec la technologie</h3>
+            <p>
+              <strong>AfricaYele Inc.</strong> a été fondée dans le but de
+              contribuer contribuer à créer l'Afrique que nous voulons pour nos
+              enfants et petits enfants. Elle est l'entité mère de…
+            </p>
+          </div>
+
+          <div class="flex-center cm-cards">
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/ay-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>AlphaYele</h4>
+
+              <p>
+                Les PME africaines sont confrontées à un certain nombre de
+                difficultés pour toucher leur public cible et atteindre leurs
+                objectifs commerciaux. Ces défis vont de la création d'un
+                contenu de qualité à une connaissance insuffisante des tendances
+                et technologies digitales actuelles.
+              </p>
+              <p>
+                Chez AlphaYele, nous proposons une gamme complète de services
+                360 degrés allant de la stratégie de marketing à la distribution
+                afin de permettre à nos clients d'atteindre leurs objectifs.
+              </p>
+              <button
+                class="flex-center cmc-btn"
+                onclick="redirectToLink('http://13.49.242.247/')"
+              >
+                <p>Rejoignez l'Aventure AlphaYele</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/bon-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Bontuteur</h4>
+
+              <p>
+                Nous croyons que l'éducation est la clé du succès, et nous
+                sommes déterminés à éliminer les obstacles qui empêchent les
+                élèves d'atteindre leur plein potentiel académique.
+              </p>
+              <p>
+                A travers notre plateforme nous fournissons un accès facile à
+                des tuteurs et universités internationales et favorisons une
+                communauté d'apprentissage inclusive.
+              </p>
+
+              <button
+                class="flex-center cmc-btn"
+                onclick="redirectToLink('https://bontuteur.com/')"
+              >
+                <p>Rejoignez l'Aventure Bontuteur</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/ay-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Biodestar</h4>
+
+              <p>
+                Avec plus de 200 millions d'habitants âgés de 15 à 24 ans,
+                l'Afrique regorge la population la plus jeune au monde.
+              </p>
+              <p>
+                Chez Biodestar nous avons pour mission d'inspirer cette jeune
+                génération à travers des histoires motivantes et des interviews
+                avec des personnalités africaines qui sont des références dans
+                leurs domaines d’activité.
+              </p>
+              <button class="flex-center cmc-btn" onclick="">
+                <p>Rejoignez l'Aventure Biodestar</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/bon-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Studios Africa</h4>
+
+              <p>
+                L'Afrique abrite certaines des personnes les plus talentueuses
+                au monde, mais de nombreux talents se heurtent à des difficultés
+                pour réaliser leur plein potentiel.
+              </p>
+              <p>
+                Studios Africa est un média qui fournit aux entrepreneurs
+                francophones des formations, le réseau et la couverture
+                médiatique.
+              </p>
+
+              <button class="flex-center cmc-btn" onclick="">
+                <p>Rejoignez l'Aventure SA</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/ay-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Talenbo</h4>
+
+              <p>
+                Les PME africaines sont confrontées à un certain nombre de
+                difficultés pour toucher leur public cible et atteindre leurs
+                objectifs commerciaux. Ces défis vont de la création d'un
+                contenu de qualité à une connaissance insuffisante des tendances
+                et technologies digitales actuelles.
+              </p>
+              <p>
+                Chez Talenbo nous résolvons ces problèmes en fournissant une
+                plateforme centrale où les entreprises et les Top talents
+                francophones peuvent se connecter.
+              </p>
+              <button class="flex-center cmc-btn" onclick="">
+                <p>Rejoignez l'Aventure Talenbo</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+
+            <div class="flex-center flex-col cmc">
+              <img
+                src="assets/img/logos/bon-emblem-white.png"
+                alt=""
+                loading="lazy"
+              />
+              <h4>Yele Venture</h4>
+
+              <p>
+                L'Afrique francophone regorge de talents et d'idées
+                prometteuses, mais les entrepreneurs font souvent face à des
+                défis importants notamment un accès limité au financement et un
+                manque de compétences et d'expertise.
+              </p>
+              <p>
+                C'est dans ce contexte que Yele Venture intervient. En offrant
+                aux entrepreneurs un accompagnement financier et humain
+                personnalisé, Yele Venture leur permet de transformer leurs
+                rêves en réalité.
+              </p>
+
+              <button class="flex-center cmc-btn" onclick="">
+                <p>Rejoignez l'Aventure YV</p>
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== TESTIMONIALS SECTION =========== -->
+      <section class="flex-center testimonials" id="testimonials">
+        <div class="flex-center flex-col te-container">
+          <div class="flex-center flex-col te-title">
+            <span>Testimonials</span>
+            <h3>Trusted By Millions</h3>
+            <p>
+              Discover what our satisfied customers have to say about their
+              experiences with our products/services.
+            </p>
+          </div>
+
+          <div class="flex-center flex-col te-wrapper" data-aos="fade-up">
+            <div class="flex-center te-cards">
+              <div class="flex-center flex-col tec">
+                <h4>
+                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+                  inventore quis amet dignissimos praesentium porro iusto quae,
+                  non laborum commodi."
+                </h4>
+
+                <div class="flex-center flex-col tec-sub">
+                  <img src="assets/img/profile/p-3.jpg" alt="" loading="lazy" />
+                  <div class="flex-center tecs">
+                    <p>First & Last Name</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center te-arrows">
+              <span class="material-symbols-outlined"> arrow_back </span>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== CLIENTS SECTION =========== -->
+      <section class="flex-center clients" id="clients">
+        <div class="flex-center flex-col cl-container">
+          <div class="flex-center cl-title"><h3>Ils parlent de nous</h3></div>
+          <div class="flex-center cl-cards">
+            <div class="flex-center clc" data-aos="fade-left">
+              <img src="assets/img/clients/forbes.png" alt="" loading="lazy" />
+            </div>
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <img src="assets/img/clients/jeune.png" alt="" loading="lazy" />
+            </div>
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <img src="assets/img/clients/tech.png" alt="" loading="lazy" />
+            </div>
+            <div
+              class="flex-center clc"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <img src="assets/img/clients/canal.png" alt="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== CTA SECTION =========== -->
+      <section class="flex-center cta" id="cta">
+        <div class="flex-center cta-container">
+          <div class="flex-center flex-col cta-content">
+            <h3>Want to jump on a project with us?</h3>
+            <button class="flex-center cta-btn" onclick="toggleConModal()">
+              <p>Let's Talk</p>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer class="flex-center flex-col footer">
+      <div class="flex-center foot-container">
+        <div class="flex-center flex-col ft-head">
+          <a href="index.html">
+            <img src="assets/img/brand/ay-black.png" alt="" loading="lazy" />
+          </a>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            facilis aspernatur, aliquam praesentium in corrupti.
+          </p>
+        </div>
+
+        <div class="flex-center ft-links">
+          <div class="flex-center flex-col ftl">
+            <p>Sitemap</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="index.html">Home</a> <span></span></li>
+              <li><a href="business.html">Business</a> <span></span></li>
+              <li><a href="enterprise.html">Join Us</a> <span></span></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col ftl">
+            <p>Services</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="">AlphaYele</a> <span></span></li>
+              <li><a href="">Biodestar</a> <span></span></li>
+              <li><a href="">Bontuteur</a> <span></span></li>
+              <li><a href="">Talenbo</a> <span></span></li>
+              <li><a href="">Studio Africa</a> <span></span></li>
+              <li><a href="">Yele Venture</a> <span></span></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col ftl">
+            <p>Social</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="" target="_blank">Instagram</a> <span></span></li>
+              <li><a href="" target="_blank">Facebook</a> <span></span></li>
+              <li><a href="" target="_blank">LinkedIn</a> <span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-center foot-terms">
+        <p>&copy;2024 Africa Yele</p>
+
+        <div class="flex-center ft">
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="#hero">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========== CONTACT MODAL =========== -->
+    <section class="flex-center con-modal">
+      <div class="flex-center flex-col com-container">
+        <p class="com-close" onclick="toggleConModal()">Close</p>
+
+        <div class="flex-center flex-col com-title">
+          <h3>We would love to hear from you!</h3>
+          <p>
+            Choose any preferred medium below, and we will get back to you as
+            soon as possible
+          </p>
+        </div>
+
+        <div class="flex-center com-cards">
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bxl-whatsapp"></i>
+            <p>Chat to support</p>
+            <span>Shoot us a text</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-envelope"></i>
+            <p>Send us mails</p>
+            <span>We are here to help</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-phone-call"></i>
+            <p>Call Us</p>
+            <span>Mon-Fri 8am to 5pm</span>
+          </div>
+        </div>
+
+        <div class="flex-center flex-col com-socials">
+          <p>Connect with us:</p>
+
+          <div class="flex-center coms">
+            <a href="" target="_blank">Instagram</a>
+            <a href="" target="_blank">Facebook</a>
+            <a href="" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== SCRIPT =========== -->
+    <script>
+      // JavaScript function to open the link in a new tab
+      function redirectToLink(url) {
+        window.open(url, "_blank"); // Open the specified URL in a new tab
+      }
+    </script>
+    <script src="assets/js/index.js"></script>
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      // window.addEventListener("load", AOS.refresh);
+    </script>
+  </body>
+</html>
