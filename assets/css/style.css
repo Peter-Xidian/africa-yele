@@ -1723,7 +1723,7 @@
   color: var(--soft-black);
 }
 
-.jef:last-child {
+.jef:nth-child(8) {
   flex: 0 0 100%;
 }
 
@@ -1740,6 +1740,20 @@
   text-align: left;
   color: var(--soft-white);
   resize: none;
+}
+
+.jef-btn {
+  flex: 0 0 100%;
+  background-color: var(--theme-red);
+  color: var(--soft-white);
+  z-index: 2;
+  padding: var(--mb-1);
+  column-gap: var(--mb-1);
+}
+
+.jef-btn:hover {
+  background-color: var(--soft-white);
+  color: var(--soft-black);
 }
 
 /*===== MEDIA QUERIES =====*/
