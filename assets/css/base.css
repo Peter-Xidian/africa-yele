@@ -328,7 +328,7 @@ button {
   justify-content: space-between;
 }
 
-.bus .nav {
+.join .nav {
   padding-bottom: var(--mb-1);
   border-bottom: 1px #aaa solid;
 }
@@ -340,7 +340,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
-.bus .nav.active {
+.join .nav.active {
   border: none;
 }
 
@@ -368,7 +368,7 @@ button {
   background-size: contain;
 }
 
-.bus .nav-logo a {
+.join .nav-logo a {
   background-image: url(/assets/img/brand/ay-black.png);
 }
 
@@ -402,7 +402,7 @@ button {
   border-right: 1px var(--soft-white) solid;
 }
 
-.bus .nm-ul {
+.join .nm-ul {
   border-right: 1px #aaa solid;
 }
 
@@ -422,7 +422,7 @@ button {
   color: var(--soft-white);
 }
 
-.bus .nml a {
+.join .nml a {
   color: var(--text-grey);
 }
 
@@ -442,7 +442,7 @@ button {
   color: var(--white);
 }
 
-.bus .nml:hover a {
+.join .nml:hover a {
   color: var(--soft-black);
 }
 
@@ -464,7 +464,7 @@ button {
   color: var(--soft-white);
 }
 
-.bus .nm-btn {
+.join .nm-btn {
   color: var(--soft-black);
 }
 

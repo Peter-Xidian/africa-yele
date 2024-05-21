@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Africa Yele - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis, a exercitationem vel adipisci eius modi laborum est vitae id neque
+    unde repudiandae iusto nihil natus ipsam culpa nobis eaque non."
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+
+    <!-- ===== MATERIAL ICONS =====-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ===== BOXICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ===== FAVICON =====-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <title>Rejoins-nous - Africa Yele</title>
+  </head>
+
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="flex-center join header">
+      <nav class="flex-center nav">
+        <div class="flex-center nav-logo">
+          <a href="index.html"> </a>
+        </div>
+
+        <div class="flex-center nav-menu">
+          <span
+            class="material-symbols-outlined"
+            id="nav-close"
+            onclick="toggleMenu()"
+          >
+            close
+          </span>
+
+          <a href="index.html" class="nm-logo"></a>
+
+          <ul class="flex-center nm-ul">
+            <li class="flex-center nml">
+              <a href="index.html">Accueil</a><span></span>
+            </li>
+            <li class="flex-center nml">
+              <a href="business.html">Entreprises</a><span></span>
+            </li>
+            <li class="flex-center nml">
+              <a href="enterprise.html">Rejoins-nous</a><span></span>
+            </li>
+          </ul>
+
+          <button class="flex-center nm-btn" onclick="toggleConModal()">
+            Get In Touch <span></span>
+          </button>
+        </div>
+
+        <span
+          class="material-symbols-outlined"
+          id="nav-open"
+          onclick="toggleMenu()"
+        >
+          menu
+        </span>
+      </nav>
+    </header>
+
+    <main class="join-main">
+      <!-- =========== JERO SECTION =========== -->
+      <section class="flex-center jero">
+        <div class="flex-center je-container">
+          <div class="flex-center flex-col je-content">
+            <h1>
+              Créons ensemble <strong>le changement</strong> que nous voulons
+              voir en Afrique francophone.
+            </h1>
+            <p>
+              Votre support est plus qu'une simple contribution - c'est un
+              investissement dans la prochaine génération d'entrepreneurs
+              francophones qui travailleront en collaboration pour relever les
+              défis les plus pressants en Afrique Francophone.
+            </p>
+
+            <div class="flex-center flex-col jec">
+              <p>Email</p>
+              <a href="" target="_blank">hello@africayele.com</a>
+            </div>
+
+            <div class="flex-center flex-col jec">
+              <p>Phone</p>
+              <a href="" target="_blank">+000 000 000 000</a>
+            </div>
+
+            <div class="flex-center flex-col jec">
+              <p>Whatsapp</p>
+              <a href="" target="_blank">Chat with our support team</a>
+            </div>
+          </div>
+
+          <form class="flex-center je-form">
+            <h3>We would love to hear from you!</h3>
+
+            <div class="flex-center flex-col jef">
+              <label for="">First Nom</label>
+              <input type="text" name="" id="" required autocomplete="on" />
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for="">Last Nom</label>
+              <input type="text" name="" id="" required autocomplete="on" />
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for="">Job/Profession</label>
+              <input type="text" name="" id="" required autocomplete="on" />
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for="">Pays de Residence</label>
+              <select name="country" id="country">
+                <option value="">Sélectionnez ci-dessous</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+                <option value="">Option 4</option>
+                <option value="">Option 5</option>
+                <option value="">Option 6</option>
+              </select>
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for=""
+                >Sélectionnez l'entreprise qui vous intéresse (Si
+                applicable)</label
+              >
+              <select name="country" id="country">
+                <option value="">Sélectionnez ci-dessous</option>
+                <option value="">AlphaYele</option>
+                <option value="">Biodestar</option>
+                <option value="">Bontuteur</option>
+                <option value="">Studios Africa</option>
+                <option value="">Talenbo</option>
+                <option value="">Yele Venture</option>
+              </select>
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for="">Sélectionner un créneau de discussion</label>
+              <a href="https://zcal.co/founders" target="_blank">Book Here</a>
+            </div>
+
+            <div class="flex-center flex-col jef">
+              <label for=""
+                >Merci d’ajouter toute information supplémentaire dont nous
+                avons besoin</label
+              >
+              <textarea name="" id=""></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- =========== CTA SECTION =========== -->
+      <section class="flex-center cta" id="cta">
+        <div class="flex-center cta-container">
+          <div class="flex-center flex-col cta-content">
+            <h3>Want to jump on a project with us?</h3>
+            <button class="flex-center cta-btn" onclick="toggleConModal()">
+              <p>Let's Talk</p>
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer class="flex-center flex-col footer">
+      <div class="flex-center foot-container">
+        <div class="flex-center flex-col ft-head">
+          <a href="index.html">
+            <img src="assets/img/brand/ay-black.png" alt="" loading="lazy" />
+          </a>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            facilis aspernatur, aliquam praesentium in corrupti.
+          </p>
+        </div>
+
+        <div class="flex-center ft-links">
+          <div class="flex-center flex-col ftl">
+            <p>Sitemap</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="index.html">Accueil</a> <span></span></li>
+              <li><a href="business.html">Entreprises</a> <span></span></li>
+              <li><a href="enterprise.html">Rejoins-nous</a> <span></span></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col ftl">
+            <p>Services</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="">AlphaYele</a> <span></span></li>
+              <li><a href="">Biodestar</a> <span></span></li>
+              <li><a href="">Bontuteur</a> <span></span></li>
+              <li><a href="">Talenbo</a> <span></span></li>
+              <li><a href="">Studio Africa</a> <span></span></li>
+              <li><a href="">Yele Venture</a> <span></span></li>
+            </ul>
+          </div>
+
+          <div class="flex-center flex-col ftl">
+            <p>Social</p>
+            <ul class="flex-center flex-col ftl-ul">
+              <li><a href="" target="_blank">Instagram</a> <span></span></li>
+              <li><a href="" target="_blank">Facebook</a> <span></span></li>
+              <li><a href="" target="_blank">LinkedIn</a> <span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-center foot-terms">
+        <p>&copy;2024 Africa Yele</p>
+
+        <div class="flex-center ft">
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="#hero">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========== CONTACT MODAL =========== -->
+    <section class="flex-center con-modal">
+      <div class="flex-center flex-col com-container">
+        <p class="com-close" onclick="toggleConModal()">Close</p>
+
+        <div class="flex-center flex-col com-title">
+          <h3>We would love to hear from you!</h3>
+          <p>
+            Choose any preferred medium below, and we will get back to you as
+            soon as possible
+          </p>
+        </div>
+
+        <div class="flex-center com-cards">
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bxl-whatsapp"></i>
+            <p>Chat to support</p>
+            <span>Shoot us a text</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-envelope"></i>
+            <p>Send us mails</p>
+            <span>We are here to help</span>
+          </div>
+
+          <div class="flex-center flex-col comc" onclick="">
+            <i class="bx bx-phone-call"></i>
+            <p>Call Us</p>
+            <span>Mon-Fri 8am to 5pm</span>
+          </div>
+        </div>
+
+        <div class="flex-center flex-col com-socials">
+          <p>Connect with us:</p>
+
+          <div class="flex-center coms">
+            <a href="" target="_blank">Instagram</a>
+            <a href="" target="_blank">Facebook</a>
+            <a href="" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== SCRIPT =========== -->
+    <script>
+      // JavaScript function to open the link in a new tab
+      function redirectToLink(url) {
+        window.open(url, "_blank"); // Open the specified URL in a new tab
+      }
+    </script>
+    <script src="assets/js/index.js"></script>
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      // window.addEventListener("load", AOS.refresh);
+    </script>
+  </body>
+</html>
