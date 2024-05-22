@@ -1002,20 +1002,17 @@ button {
 
 /* Media query for screens with a minimum width of 1800px */
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1500px) and (max-device-width: 1750px) and (-webkit-min-device-pixel-ratio: 1) {
-  /* ========== HEADER SECTION ========== */
+/* @media screen and (min-device-width: 1500px) and (max-device-width: 1750px) and (-webkit-min-device-pixel-ratio: 1) {
   .header {
     position: fixed;
     top: var(--mb-2);
     left: 0;
     width: 100%;
     z-index: 30;
-    padding: 0 var(--mb-8);
-    /* border: 1px tomato solid; */
   }
 
   .header.active {
     top: var(--mb-1);
     padding: 0 var(--mb-8);
   }
-}
+} */

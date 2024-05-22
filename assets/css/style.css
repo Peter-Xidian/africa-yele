@@ -3742,15 +3742,15 @@
 
 /* Media query for screens with a minimum width of 1800px */
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1500px) and (max-device-width: 1750px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media screen and (min-device-width: 1500px) and (max-device-width: 1750px) and (-webkit-min-device-pixel-ratio: 1) {
   /* --------- =========== LANDING PAGE =========== --------- */
-  .lp-main {
+/* .lp-main {
     width: 100%;
     overflow: hidden;
-  }
+  } */
 
-  /* ========== HERO SECTION ========== */
-  .h-content {
+/* ========== HERO SECTION ========== */
+/* .h-content {
     position: relative;
     width: 100%;
     height: 100%;
@@ -3758,8 +3758,7 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: var(--mb-2) var(--mb-8);
-    /* padding-bottom: 10rem; */
-    /* border: 1px gold solid; */
+
   }
 
   .h-content p {
@@ -3790,10 +3789,10 @@
     padding: 0;
     opacity: 0.9;
     font-style: unset;
-  }
+  } */
 
-  /* ========== ABOUT SECTION ========== */
-  .about {
+/* ========== ABOUT SECTION ========== */
+/* .about {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3801,10 +3800,10 @@
   .a-container {
     row-gap: var(--mb-6);
     padding: var(--mb-8);
-  }
+  } */
 
-  /* ========== POTENTIAL SECTION ========== */
-  .potential {
+/* ========== POTENTIAL SECTION ========== */
+/* .potential {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3813,10 +3812,10 @@
     width: 100%;
     padding: var(--mb-8);
     background-color: rgba(0, 0, 0, 0.9);
-  }
+  } */
 
-  /* ========== JOURNEY SECTION ========== */
-  .journey {
+/* ========== JOURNEY SECTION ========== */
+/* .journey {
     background-position: center;
   }
 
@@ -3824,10 +3823,10 @@
     width: 100%;
     padding: var(--mb-8);
     row-gap: var(--mb-6);
-  }
+  } */
 
-  /* ========== SERVICES SECTION ========== */
-  .services {
+/* ========== SERVICES SECTION ========== */
+/* .services {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3835,16 +3834,14 @@
   .se-container {
     width: 100%;
     padding: var(--mb-8) 10rem;
-    /* border: 1px orange solid; */
-  }
+  } */
 
-  /* ========== TESTIMONIALS SECTION ========== */
-  .testimonials {
+/* ========== TESTIMONIALS SECTION ========== */
+/* .testimonials {
     position: relative;
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
     padding: var(--mb-8) 12rem;
-    /* padding-bottom: var(--mb-4); */
   }
 
   .te-wrapper {
@@ -3856,53 +3853,45 @@
     row-gap: var(--mb-2-5);
     z-index: 2;
     overflow: hidden;
-    /* border: 1px lime solid; */
     margin: auto;
   }
 
   .te-cards {
     flex: 0 0 100%;
-    /* border: 1px dodgerblue solid; */
     justify-content: flex-start;
     align-items: flex-start;
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
     animation: fadeX 0.3s ease-in-out;
-    /* padding: var(--mb-1); */
   }
 
   .tec {
     width: 915px;
-    /* min-width: 100%; */
     justify-content: flex-start;
     row-gap: var(--mb-2);
-    /* box-sizing: border-box; */
-    /* border: 1px pink solid; */
-  }
+  } */
 
-  /* ========== CLIENTS SECTION ========== */
-  .clients {
+/* ========== CLIENTS SECTION ========== */
+/* .clients {
     width: 100%;
     padding: var(--mb-6) 12rem;
-    /* padding-top: 0; */
     background-color: var(--white);
-    /* border: 1px tomato solid; */
-  }
+  } */
 
-  /* ========== CTA SECTION ========== */
-  .cta {
+/* ========== CTA SECTION ========== */
+/* .cta {
     width: 100%;
     padding: var(--mb-8) 12rem;
-  }
+  } */
 
-  /* --------- =========== BUSINESS PAGE =========== --------- */
-  .bus-main {
+/* --------- =========== BUSINESS PAGE =========== --------- */
+/* .bus-main {
     width: 100%;
     overflow: hidden;
-  }
+  } */
 
-  /* ========== BERO SECTION ========== */
-  .bero {
+/* ========== BERO SECTION ========== */
+/* .bero {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3911,7 +3900,6 @@
     justify-content: flex-end;
     row-gap: var(--mb-2);
     padding: var(--mb-5) 0;
-    /* border: 1px hotpink solid; */
   }
 
   .b-content {
@@ -3940,10 +3928,10 @@
     background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
 
-  /* ========== TEAM SECTION ========== */
-  .team {
+/* ========== TEAM SECTION ========== */
+/* .team {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3958,10 +3946,10 @@
     width: 100%;
     height: 250px;
     object-position: 50% 10%;
-  }
+  } */
 
-  /* ========== COMPANIES SECTION ========== */
-  .companies {
+/* ========== COMPANIES SECTION ========== */
+/* .companies {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3970,17 +3958,16 @@
     width: 100%;
     padding: var(--mb-8);
     row-gap: var(--mb-4);
-    /* border: 1px hotpink solid; */
-  }
+  } */
 
-  /* --------- =========== LANDING PAGE =========== --------- */
-  .join-main {
+/* --------- =========== LANDING PAGE =========== --------- */
+/* .join-main {
     width: 100%;
     overflow: hidden;
-  }
+  } */
 
-  /* ========== HERO SECTION ========== */
-  .jero {
+/* ========== HERO SECTION ========== */
+/* .jero {
     background-image: url(/assets/img/bckg/b-10.jpg);
     background-position: center;
   }
@@ -3990,4 +3977,4 @@
     padding: var(--mb-8);
     padding-top: 9rem;
   }
-}
+} */
