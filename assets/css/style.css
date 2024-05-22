@@ -1638,6 +1638,8 @@
   text-decoration-style: solid;
   text-decoration-color: var(--text-grey);
   text-decoration-thickness: 2px;
+  border: none !important;
+  padding: unset !important;
 }
 
 .jec a:hover {
