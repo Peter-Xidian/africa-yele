@@ -1017,6 +1017,7 @@
   height: 55px;
   border-radius: 50%;
   object-fit: cover;
+  display: none;
 }
 
 .tec-sub p {
@@ -1024,6 +1025,9 @@
   font-weight: 500;
   text-align: center;
   color: var(--soft-white);
+  padding: var(--mb-1) var(--mb-1-5);
+  border: 1px #ccc solid;
+  border-radius: 30px;
 }
 
 .te-arrows {
@@ -1480,8 +1484,8 @@
 
 .cmc {
   flex: 0 0 48%;
-  height: 520px;
-  padding: var(--mb-2);
+  height: 550px;
+  padding: var(--mb-2-5);
   justify-content: flex-start;
   align-items: flex-start;
   row-gap: var(--mb-2);
@@ -1502,6 +1506,22 @@
 .cmc img {
   height: 50px;
   object-fit: cover;
+}
+
+.cmc:nth-child(3) img,
+.cmc:nth-child(5) img,
+.cmc:nth-child(6) img {
+  filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
+    brightness(106%) contrast(106%);
+}
+
+.cmc:nth-child(6) img {
+  height: 80px;
+}
+
+.cmc:nth-child(5),
+.cmc:nth-child(6) {
+  height: auto;
 }
 
 .cmc h4 {
@@ -2433,9 +2453,10 @@
   }
 
   .tec {
-    width: 300px;
+    width: 302px;
     justify-content: flex-start;
     row-gap: var(--mb-1-5);
+    /* border: 1px lime solid; */
   }
 
   .tec h4 {
@@ -2455,6 +2476,7 @@
 
   .tec-sub p {
     font-size: 1rem;
+    border-radius: 40px;
   }
 
   .te-arrows {
