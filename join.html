@@ -117,34 +117,31 @@
 
             <div class="flex-center flex-col jec">
               <p>Email</p>
-              <a href="mailto:hello@africayele.com" target="_blank"
-                >hello@africayele.com</a
+              <a href="mailto:founders@africayele.com" target="_blank"
+                >founders@africayele.com</a
               >
             </div>
 
             <div class="flex-center flex-col jec">
-              <p>Phone</p>
-              <a href="tel:353877811796" target="_blank">+000 000 000 000</a>
-            </div>
-
-            <div class="flex-center flex-col jec">
-              <p>Whatsapp</p>
-              <a href="https://wa.me/353877811796" target="_blank"
-                >Chat with our support team</a
+              <p>Location</p>
+              <a
+                href="https://maps.app.goo.gl/PqAZoL4yakBAUahT7"
+                target="_blank"
+                >Abidjan, Côte d'Ivoire</a
               >
             </div>
           </div>
 
           <form class="flex-center je-form">
-            <h3>We would love to hear from you! 👋</h3>
+            <h3>WL’aventure commence maintenant! 👋</h3>
 
             <div class="flex-center flex-col jef">
-              <label for="">First Nom</label>
+              <label for="">Nom</label>
               <input type="text" name="" id="" required autocomplete="on" />
             </div>
 
             <div class="flex-center flex-col jef">
-              <label for="">Last Nom</label>
+              <label for="">Prenom</label>
               <input type="text" name="" id="" required autocomplete="on" />
             </div>
 
@@ -154,15 +151,15 @@
             </div>
 
             <div class="flex-center flex-col jef">
-              <label for="">Pays de Residence</label>
+              <label for="">Nature de votre support</label>
               <select name="country" id="country">
                 <option value="">Sélectionnez ci-dessous</option>
-                <option value="">Option 1</option>
-                <option value="">Option 2</option>
-                <option value="">Option 3</option>
-                <option value="">Option 4</option>
-                <option value="">Option 5</option>
-                <option value="">Option 6</option>
+                <option value="">Mentorat</option>
+                <option value="">Investissement</option>
+                <option value="">Couverture médiatique</option>
+                <option value="">Subventions</option>
+                <option value="">Partenariat</option>
+                <option value="">Autre</option>
               </select>
             </div>
 
@@ -184,7 +181,9 @@
 
             <div class="flex-center flex-col jef">
               <label for="">Sélectionner un créneau de discussion</label>
-              <a href="https://zcal.co/founders" target="_blank">Book Here</a>
+              <a href="https://zcal.co/founders" target="_blank"
+                >Prenez RDV ici</a
+              >
             </div>
 
             <div class="flex-center flex-col jef">
@@ -207,9 +206,12 @@
       <section class="flex-center cta" id="cta">
         <div class="flex-center cta-container">
           <div class="flex-center flex-col cta-content">
-            <h3>Want to jump on a project with us?</h3>
-            <button class="flex-center cta-btn" onclick="toggleConModal()">
-              <p>Let's Talk</p>
+            <h3>Prêt à participer à ce voyage extraordinaire?</h3>
+            <button
+              class="flex-center cta-btn"
+              onclick="redirectToLink('https://africa-yele.netlify.app/join')"
+            >
+              <p>Écrivons l'histoire ensemble</p>
               <span class="material-symbols-outlined"> arrow_forward </span>
             </button>
           </div>

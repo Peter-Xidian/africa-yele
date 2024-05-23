@@ -257,9 +257,9 @@
 
 .act-img {
   flex: 0 0 45%;
-  height: 410px;
+  height: 430px;
   background-color: var(--soft-white);
-  background-image: url(/assets/img/bckg/b-2.jpg);
+  background-image: url(/assets/img/bckg/b-18.jpg);
   background-position: 50% 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -514,7 +514,7 @@
   width: 100%;
   padding: var(--mb-8) var(--mb-6);
   background-color: rgba(250, 250, 250, 0.95);
-  row-gap: var(--mb-6);
+  row-gap: var(--mb-4);
   justify-content: flex-start;
 }
 
@@ -1122,7 +1122,7 @@
 }
 
 .cta-content h3 {
-  font-size: 6.5rem;
+  font-size: 6rem;
   text-align: center;
   font-weight: 500;
   color: var(--soft-black);
@@ -1131,13 +1131,12 @@
 }
 
 .cta-btn {
-  width: 20%;
+  width: 40%;
   background-color: var(--theme-red);
   border-radius: 40px;
   justify-content: space-between;
   /* column-gap: var(--mb-2); */
-  padding: var(--mb-1) var(--mb-1-5);
-  padding-right: var(--mb-1);
+  padding: var(--mb-1-5);
 }
 
 .cta-btn p {
@@ -1481,7 +1480,7 @@
 
 .cmc {
   flex: 0 0 48%;
-  height: 500px;
+  height: 520px;
   padding: var(--mb-2);
   justify-content: flex-start;
   align-items: flex-start;
