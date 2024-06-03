@@ -1126,7 +1126,7 @@
 }
 
 .cta-content h3 {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
   font-weight: 500;
   color: var(--soft-black);
@@ -1135,12 +1135,12 @@
 }
 
 .cta-btn {
-  width: 40%;
+  width: 42.5%;
   background-color: var(--theme-red);
-  border-radius: 40px;
+  border-radius: 60px;
   justify-content: space-between;
-  /* column-gap: var(--mb-2); */
-  padding: var(--mb-1-5);
+  column-gap: var(--mb-1);
+  padding: var(--mb-1-5) var(--mb-2);
 }
 
 .cta-btn p {
@@ -2546,28 +2546,28 @@
   .cta-content {
     width: 100%;
     justify-content: flex-start;
-    row-gap: var(--mb-2);
+    row-gap: var(--mb-2-5);
     /* border: 1px dodgerblue solid; */
   }
 
   .cta-content h3 {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 1.1;
     /* font-family: var(--mon-font); */
   }
 
   .cta-btn {
-    width: 70%;
+    width: 100%;
     background-color: var(--theme-red);
     border-radius: 40px;
     justify-content: space-between;
     /* column-gap: var(--mb-2); */
-    padding: var(--mb-0-75) var(--mb-1-5);
+    padding: var(--mb-1) var(--mb-1-5);
     padding-right: var(--mb-1);
   }
 
   .cta-btn p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .cta-btn span {
@@ -2575,6 +2575,7 @@
     background-color: var(--white);
     border-radius: 50%;
     color: var(--theme-red);
+    font-size: var(--fs-1);
   }
 
   /* --------- =========== BUSINESS PAGE =========== --------- */

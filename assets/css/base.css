@@ -673,6 +673,10 @@ button {
     display: inline-block;
   }
 
+  .join #nav-open {
+    color: var(--soft-black);
+  }
+
   .nav.active #nav-open {
     color: var(--soft-black);
   }
@@ -682,7 +686,7 @@ button {
     top: var(--mb-0-5);
     left: 50%;
     transform: translate(-50%, 0);
-    width: 90%;
+    width: 95%;
     background-color: var(--white);
     padding: var(--mb-1-5);
     justify-content: flex-start;
@@ -733,6 +737,10 @@ button {
     border-bottom: 1px #ddd solid;
   }
 
+  .join .nm-ul {
+    border-right: none;
+  }
+
   .nav.active .nm-ul {
     border-right: none;
   }
@@ -753,7 +761,7 @@ button {
   }
 
   .nm-btn {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: var(--mb-0-75) var(--mb-1-5);
     background-color: var(--soft-black);
     color: var(--white);
@@ -763,6 +771,10 @@ button {
 
   .nav.active .nm-btn {
     color: var(--white);
+  }
+
+  .join .nm-btn {
+    color: var(--soft-white);
   }
 
   /* ========== FOOTER SECTION ========== */
