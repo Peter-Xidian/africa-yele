@@ -2378,7 +2378,7 @@
   .sec-title {
     width: 100%;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .sec-title sub {
@@ -2389,14 +2389,20 @@
 
   .sec-title h4 {
     flex: 0 0 60%;
-    font-size: 1.8rem;
-    line-height: 1.3;
+    font-size: 1.6rem;
+    line-height: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
     /* border: 1px gold solid; */
   }
 
   #sect-span {
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: var(--mb-0-25);
   }
 
   .sec-content {
@@ -2412,19 +2418,25 @@
   }
 
   .sec-btn {
-    width: 70%;
+    width: auto;
     background-color: transparent;
     padding: unset;
-    column-gap: var(--mb-0-75);
+    column-gap: unset;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: var(--mb-1);
   }
 
   .sec-btn p {
     font-size: 1rem;
+    font-weight: 400;
   }
 
   .sec-btn span {
-    padding: 0.65rem;
+    padding: 0.5rem;
     color: var(--soft-white);
+    font-size: 1.2rem;
   }
 
   /* ========== TESTIMONIALS SECTION ========== */
@@ -2496,7 +2508,7 @@
   }
 
   .te-cards {
-    /* border: 1px limegreen solid; */
+    /* border: 1px dodgerblue solid; */
     justify-content: flex-start;
     align-items: flex-start;
     overflow: hidden;
@@ -2504,14 +2516,14 @@
   }
 
   .tec {
-    width: 302px;
+    width: 260px;
     justify-content: flex-start;
     row-gap: var(--mb-1-5);
     /* border: 1px lime solid; */
   }
 
   .tec h4 {
-    font-size: var(--fs-1-5);
+    font-size: 1.3rem;
     line-height: 1.5;
   }
 
