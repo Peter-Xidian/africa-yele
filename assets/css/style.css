@@ -1229,6 +1229,7 @@
   justify-content: flex-end;
   row-gap: var(--mb-2);
   padding: var(--mb-5) 0;
+  padding-top: var(--mb-8);
   /* border: 1px hotpink solid; */
 }
 
@@ -1279,6 +1280,7 @@
 }
 
 .bv-img {
+  position: relative;
   width: 100%;
   height: 500px;
   background-color: var(--soft-white);
@@ -1286,6 +1288,48 @@
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bv-img div {
+  width: 30%;
+  position: absolute;
+  background-color: var(--white);
+  padding: var(--mb-1-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: var(--mb-0-75);
+}
+
+.bvi-mission {
+  top: var(--mb-2);
+  left: var(--mb-2);
+}
+
+.bvi-vision {
+  bottom: var(--mb-2);
+  right: var(--mb-2);
+}
+
+.bv-img div h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--soft-black);
+  font-family: var(--red-font);
+  line-height: 1.2;
+  opacity: 0.95;
+  text-decoration: underline;
+  text-decoration-color: var(--theme-red);
+  text-decoration-style: wavy;
+}
+
+.bv-img div p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-grey);
+  text-align: left;
+  opacity: 0.9;
+  line-height: 1.3;
 }
 
 .bv-cards {
@@ -1408,13 +1452,18 @@
   padding: var(--mb-1-5) var(--mb-1);
   justify-content: flex-start;
   align-items: flex-start;
-  row-gap: var(--mb-0-5);
+  row-gap: var(--mb-0-25);
   border: 1px #ccc solid;
+}
+
+.tmc:hover {
+  background-color: var(--white);
+  border: 1px var(--white) solid;
 }
 
 .tmc img {
   width: 100%;
-  height: 230px;
+  height: 250px;
   background-color: seashell;
   object-fit: cover;
   margin-bottom: var(--mb-0-5);
@@ -1430,7 +1479,7 @@
 }
 
 .tmc span {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-align: left;
   color: var(--text-grey);
@@ -1442,7 +1491,7 @@
   font-weight: 400;
   text-align: left;
   color: var(--text-grey);
-  margin-top: var(--mb-0-25);
+  margin-top: var(--mb-0-5);
 }
 
 /* ========== COMPANIES SECTION ========== */
@@ -1646,11 +1695,11 @@
   flex: 0 0 45%;
   justify-content: flex-start;
   align-items: flex-start;
-  row-gap: var(--mb-2);
+  row-gap: var(--mb-1-5);
 }
 
 .je-content h1 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   text-align: left;
   color: var(--soft-black);
@@ -1685,6 +1734,7 @@
   text-align: left;
   color: var(--text-grey);
   opacity: 0.8;
+  line-height: 1.1;
 }
 
 .jec a {
@@ -1702,6 +1752,20 @@
 
 .jec a:hover {
   text-decoration-color: var(--theme-red);
+}
+
+.jec-img {
+  width: 100%;
+  height: 310px;
+  overflow: auto;
+  border: 4px var(--soft-black) solid;
+  padding: var(--mb-0-5);
+}
+
+.jec-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .je-form {
@@ -1795,7 +1859,7 @@
   color: var(--soft-black);
 }
 
-.jef:nth-child(8) {
+.jef:nth-child(10) {
   flex: 0 0 100%;
 }
 
@@ -2508,15 +2572,15 @@
   }
 
   .te-cards {
-    /* border: 1px dodgerblue solid; */
     justify-content: flex-start;
     align-items: flex-start;
     overflow: hidden;
     animation: fadeX 0.3s ease-in-out;
+    column-gap: var(--mb-1);
   }
 
   .tec {
-    width: 260px;
+    width: 278px;
     justify-content: flex-start;
     row-gap: var(--mb-1-5);
     /* border: 1px lime solid; */
@@ -2661,6 +2725,7 @@
     justify-content: flex-end;
     row-gap: var(--mb-2);
     padding: var(--mb-4) 0;
+    padding-top: var(--mb-8);
     /* border: 1px hotpink solid; */
   }
 
@@ -2676,7 +2741,7 @@
 
   .b-content h1 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.5;
     opacity: 0.95;
@@ -2697,9 +2762,39 @@
 
   .bv-img {
     width: 100%;
-    height: 350px;
+    height: 650px;
     background-image: url(/assets/img/bckg/b-8.jpg);
     background-position: 50% 30%;
+  }
+
+  .bv-img div {
+    width: 90%;
+    padding: var(--mb-1-5);
+    row-gap: var(--mb-0-75);
+  }
+
+  .bvi-mission {
+    top: unset;
+    left: unset;
+    bottom: 10rem;
+  }
+
+  .bvi-vision {
+    bottom: var(--mb-1-5);
+    right: unset;
+  }
+
+  .bv-img div h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .bv-img div p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-grey);
+    text-align: left;
   }
 
   .bv-cards {
@@ -2967,7 +3062,7 @@
   }
 
   .je-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
     line-height: 1.3;
   }
@@ -2990,22 +3085,39 @@
   .jec {
     justify-content: flex-start;
     align-items: center;
+    row-gap: unset;
   }
 
   .jec p {
     font-size: 0.95rem;
     text-align: center;
     opacity: 0.8;
+    line-height: 1;
   }
 
   .jec a {
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
+    line-height: 1.3;
   }
 
   .jec a:hover {
     text-decoration-color: var(--theme-red);
+  }
+
+  .jec-img {
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    border: 4px var(--soft-black) solid;
+    padding: var(--mb-0-5);
+  }
+
+  .jec-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .je-form {
