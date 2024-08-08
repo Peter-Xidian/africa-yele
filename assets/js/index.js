@@ -37,36 +37,51 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/* ------------- TOGGLE EVENTS ------------- */
-// const eTabs = document.querySelectorAll(".et");
-// const ebox = document.querySelectorAll(".ec");
-// const enav = document.querySelectorAll(".en");
+/* ------------- TOGGLE GRANT FORMS ------------- */
+const grTabs = document.querySelectorAll(".grt");
+const grBox = document.querySelectorAll(".grw");
 
-// // Add a click event listener to each sidebar element
-// eTabs.forEach((element, index) => {
-//   element.addEventListener("click", () => {
-//     // Remove active class from all sidebar elements
-//     eTabs.forEach((el) => {
-//       el.classList.remove("et-active");
-//     });
-//     // Add active class to the clicked sidebar element
-//     element.classList.add("et-active");
+// Add a click event listener to each sidebar element
+grTabs.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    // Remove active class from all sidebar elements
+    grTabs.forEach((grt) => {
+      grt.classList.remove("active");
+    });
+    // Add active class to the clicked sidebar element
+    element.classList.add("active");
 
-//     // Remove active class from all containers
-//     ebox.forEach((eb) => {
-//       eb.classList.remove("ec-active");
-//     });
-//     // Add active class to the container with the same index as the clicked sidebar element
-//     ebox[index].classList.add("ec-active");
+    // Remove active class from all containers
+    grBox.forEach((grb) => {
+      grb.classList.remove("active");
+    });
+    // Add active class to the container with the same index as the clicked sidebar element
+    grBox[index].classList.add("active");
+  });
+});
 
-//     // Remove active class from all containers
-//     enav.forEach((en) => {
-//       en.classList.remove("en-active");
-//     });
-//     // Add active class to the container with the same index as the clicked sidebar element
-//     enav[index].classList.add("en-active");
-//   });
-// });
+/* ------------- TOGGLE FAQ ------------- */
+const fqTab = document.querySelectorAll(".fqtt");
+const fqBox = document.querySelectorAll(".fq-cards");
+
+// Add a click event listener to each sidebar element
+fqTab.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    // Remove active class from all sidebar elements
+    fqTab.forEach((fqt) => {
+      fqt.classList.remove("active");
+    });
+    // Add active class to the clicked sidebar element
+    element.classList.add("active");
+
+    // Remove active class from all containers
+    fqBox.forEach((fqb) => {
+      fqb.classList.remove("active");
+    });
+    // Add active class to the container with the same index as the clicked sidebar element
+    fqBox[index].classList.add("active");
+  });
+});
 
 /* ------------- TESTIMONIAL CAROUSEL ------------- */
 // script.js
