@@ -1594,20 +1594,23 @@
 }
 
 .cmc img {
-  height: 50px;
+  width: 60px;
   object-fit: cover;
+  padding: var(--mb-0-5);
+  background-color: var(--white);
+  border-radius: 5px;
 }
 
-.cmc:nth-child(3) img,
+/* .cmc:nth-child(3) img,
 .cmc:nth-child(5) img,
 .cmc:nth-child(6) img {
   filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
     brightness(106%) contrast(106%);
-}
+} */
 
-.cmc:nth-child(6) img {
+/* .cmc:nth-child(6) img {
   height: 80px;
-}
+} */
 
 .cmc:nth-child(5),
 .cmc:nth-child(6) {
@@ -3440,7 +3443,7 @@
   }
 
   .cmc img {
-    height: 50px;
+    width: 50px;
     object-fit: cover;
   }
 
