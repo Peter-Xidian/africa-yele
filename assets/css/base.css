@@ -345,41 +345,28 @@ button {
 }
 
 .nav-logo {
-  width: 90px;
-  height: 35px;
-  justify-content: flex-start;
-  /* border: 1px gold solid; */
+  flex: 0 0 125px;
+  height: 61.5px;
+  border-radius: 5px;
+  background-image: url(/assets/img/logos/logo-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -1rem;
+}
+
+.join .nav-logo {
+  flex: 0 0 45px;
+  height: 50px;
+  background-image: url(/assets/img/logos/YeleGroup.png);
 }
 
 .nav.active .nav-logo {
-  width: 100px;
-  height: 30px;
+  flex: 0 0 45px;
+  height: 50px;
+  background-image: url(/assets/img/logos/YeleGroup.png);
+  margin: 0;
 }
-
-.nav-logo a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url(/assets/img/brand/ay-white.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.join .nav-logo a {
-  background-image: url(/assets/img/brand/ay-black.png);
-}
-
-.nav.active .nav-logo a {
-  background-image: url(/assets/img/brand/ay-black.png);
-}
-
-/* .nav-logo a img {
-  width: 100px;
-  object-fit: cover;
-} */
 
 #nav-close,
 #nav-open,
@@ -504,7 +491,7 @@ button {
   flex: 0 0 50%;
   justify-content: flex-start;
   align-items: flex-start;
-  row-gap: var(--mb-1-5);
+  row-gap: var(--mb-0-5);
   /* border: 1px gold solid; */
 }
 
@@ -518,6 +505,8 @@ button {
 .ft-head a img {
   width: 200px;
   object-fit: cover;
+  /* border: 1px tomato solid; */
+  margin-left: -2rem;
 }
 
 .ft-head p {
@@ -648,8 +637,8 @@ button {
   }
 
   .nav-logo {
-    width: 75px;
-    height: 30px;
+    flex: 0 0 95px;
+    height: 42px;
     justify-content: flex-start;
     /* border: 1px gold solid; */
   }
@@ -663,8 +652,9 @@ button {
     background-image: url(/assets/img/brand/ay-white.png);
   }
 
-  .nav.active .nav-logo a {
-    background-image: url(/assets/img/brand/ay-black.png);
+  .join .nav-logo {
+    flex: 0 0 45px;
+    height: 50px;
   }
 
   #nav-open {
@@ -696,6 +686,7 @@ button {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border-radius: 10px;
     animation: fade 0.3s ease-in-out;
+    overflow: hidden;
     display: none;
   }
 
@@ -705,15 +696,17 @@ button {
   }
 
   .nm-logo {
-    width: 70px;
-    height: 28px;
-    background-image: url(/assets/img/brand/ay-black.png);
+    width: 30px;
+    height: 33px;
+    background-image: url(/assets/img/logos/YeleGroup.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px tomato solid; */
+    /* margin-left: -1rem; */
   }
 
   #nav-close {
@@ -733,8 +726,8 @@ button {
     border: none;
     padding: var(--mb-1) 0;
     border-right: none;
-    border-top: 1px #ddd solid;
-    border-bottom: 1px #ddd solid;
+    border-top: 1px #d4d4d4 solid;
+    border-bottom: 1px #d4d4d4 solid;
   }
 
   .join .nm-ul {
@@ -799,7 +792,7 @@ button {
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    row-gap: var(--mb-1-5);
+    row-gap: var(--mb-0-75);
     /* border: 1px gold solid; */
   }
 
@@ -808,16 +801,18 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* border: 1px dodgerblue solid; */
   }
 
   .ft-head a img {
     width: 150px;
     object-fit: cover;
+    margin: 0;
   }
 
   .ft-head p {
     width: 90%;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 
